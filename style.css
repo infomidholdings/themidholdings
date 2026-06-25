@@ -1,0 +1,314 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #yellow;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(
+        135deg,
+        #f58220 0%,
+        #e89c1c 35%,
+        #6c9b34 70%,
+        #3f7d2b 100%
+    );
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+section {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+}h2 {
+    color: #0d2b52;
+}
+
+.brands {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.brand-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 220px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+footer {
+    background: #0d2b52;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+header {
+    background-color: #0d2b52;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Other CSS code here */
+
+footer {
+    background: #0d2b52;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ADD NAVIGATION CSS BELOW THIS */
+
+nav {
+    background-color: #081f3d;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a .ceo-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 70px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.ceo-image {
+    flex: 0 0 300px;
+}
+
+.ceo-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    display: block;
+}
+
+.ceo-content {
+    flex: 1;
+}
+
+.ceo-content h2 {
+    color: #0d2b52;
+    margin-top: 0;
+}
+
+.ceo-content h3 {
+    color: #333;
+    margin-bottom: 20px;
+}{
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+nav {
+    background-color: #081f3d;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white !important;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:visited {
+    color: white !important;
+}
+
+nav a:hover {
+    color: #d4af37 !important;
+}
+
+.ceo-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.ceo-section img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.ceo-content {
+    flex: 1;
+}
+
+.ceo-content h2 {
+    margin-top: 0;
+}
+
+.ceo-content p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+.cta-section {
+    text-align: center;
+    background: white;
+    padding: 60px 20px;
+    margin-top: 30px;
+}
+
+.cta-button {
+    background: linear-gradient(90deg, #f7931e, #4b8b2c);
+    color: white;
+    padding: 15px 35px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+..cta-button:hover {
+    opacity: 0.9;
+}
+
+nav {
+    background: #0d2b52;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+}
+
+.logo img {
+    height: 85px;
+    width: auto;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #f7941d;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+.consultation-section {
+    margin-bottom: 80px;
+}
+ul {
+    line-height: 2;
+    font-size: 18px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(90deg, #f28c28, #4b8b2c);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+h2 {
+    color: #0d2b52;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.8;
+}
+h1 {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.consultation-btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #f28c28, #4b8b2c);
+    color: white;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.consultation-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+body {
+    border: 5px solid red !important;
+}
+.coming-soon-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.coming-soon-section h1 {
+    color: #0d2b52;
+    margin-bottom: 30px;
+}
+
+.coming-soon-image {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.coming-soon-section p {
+    font-size: 20px;
+    color: #555;
+}
