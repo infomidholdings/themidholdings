@@ -1,0 +1,705 @@
+/*====================================
+OUR PROMISE
+====================================*/
+
+.our-promise{
+
+    padding:100px 0;
+
+    background:#ffffff;
+
+}
+
+.our-promise .container{
+
+    max-width:900px;
+
+    text-align:center;
+
+}
+
+.our-promise h2{
+
+    font-size:52px;
+
+    color:#23461d;
+
+    margin:20px 0 35px;
+
+    line-height:1.2;
+
+}
+
+.our-promise p{
+
+    font-size:20px;
+
+    line-height:2;
+
+    color:#666;
+
+    margin-bottom:25px;
+
+}
+
+/*=========================================
+OLEASTRA HERO
+=========================================*/
+
+.brand-hero{
+    position: relative;
+    min-height:100vh;
+padding:120px 0;
+height:auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(rgba(15,35,20,.55),rgba(15,35,20,.55)),
+                url("../images/brands/oleastra/hero.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.brand-hero .container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.brand-content{
+max-width:760px;
+position:relative;
+z-index:2;
+}
+
+.brand-logo{
+    width: 180px;
+    margin-bottom: 30px;
+}
+
+.brand-status{
+    display: inline-block;
+    padding: 10px 22px;
+    background: #4E7C36;
+    color: #ffffff;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.brand-content h1{
+    font-family: "Playfair Display", serif;
+    font-size:64px;
+    font-weight:700;
+    line-height:1.15;
+
+    color:#ffffff !important;
+
+    text-shadow:
+        0 5px 20px rgba(0,0,0,.55);
+
+    margin-bottom:30px;
+}
+.brand-content p{
+
+    color:#ffffff !important;
+
+    text-shadow:
+        0 3px 15px rgba(0,0,0,.45);
+
+    font-size:20px;
+    line-height:1.9;
+}
+.hero-buttons{
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.btn-primary{
+    display: inline-block;
+    padding: 16px 38px;
+    background: #D8892A;
+    color: #ffffff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.brand-overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.45);
+    z-index:1;
+}
+
+
+.brand-name{
+
+    font-family:"Inter",sans-serif;
+
+    font-size:24px;
+
+    letter-spacing:10px;
+
+    font-weight:700;
+
+    color:#D8892A;
+
+    margin-bottom:20px;
+
+    text-transform:uppercase;
+
+}
+
+/*==================================
+OUR PRODUCT RANGE
+==================================*/
+
+.our-range{
+
+padding:100px 0;
+
+background:#f8f8f8;
+
+}
+
+.range-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:35px;
+
+margin-top:50px;
+
+}
+
+.range-box{
+
+background:#ffffff;
+
+padding:40px;
+
+border-radius:18px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.range-box:hover{
+
+transform:translateY(-8px);
+
+}
+
+.range-box h3{
+
+font-size:28px;
+
+color:#23461d;
+
+margin-bottom:20px;
+
+}
+
+.range-box p{
+
+line-height:1.8;
+
+color:#666;
+
+margin-bottom:20px;
+
+}
+
+.range-box ul{
+
+padding-left:18px;
+
+}
+
+.range-box li{
+
+margin-bottom:12px;
+
+color:#444;
+
+}
+
+/*====================================
+OUR COLLECTION
+====================================*/
+
+.product-section{
+
+    padding:100px 0;
+
+    background:#ffffff;
+
+}
+
+.product-section .container{
+
+    max-width:1200px;
+
+}
+
+.section-tag{
+
+    display:inline-block;
+
+    background:#4E7C36;
+
+    color:#ffffff;
+
+    padding:10px 25px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    margin-bottom:20px;
+
+}
+
+.product-section h2{
+
+    font-family:"Playfair Display",serif;
+
+    font-size:52px;
+
+    color:#23461d;
+
+    margin-bottom:20px;
+
+}
+
+.section-intro{
+max-width:850px;
+margin:0 auto 60px;
+text-align:center;
+font-size:20px;
+line-height:1.9;
+color:#666;
+
+}
+
+.products-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.product-card{
+
+display:flex;
+flex-direction:column;
+justify-content:flex-start;
+
+min-height:260px;
+
+background:#fff;
+
+border-radius:20px;
+
+padding:35px;
+
+box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+border-top:5px solid #D8892A;
+
+transition:.35s;
+
+}
+.product-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+
+}
+
+.product-card h3{
+
+    font-size:26px;
+
+    color:#23461d;
+
+    margin-bottom:15px;
+
+    font-family:"Playfair Display",serif;
+
+}
+
+.product-card p{
+
+    flex-grow:1;
+
+font-size:17px;
+
+line-height:1.8;
+
+color:#666;
+}
+
+.available,
+.coming{
+
+    display:inline-block;
+
+    margin-bottom:18px;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+.available{
+
+    background:#2e7d32;
+
+    color:#ffffff;
+
+}
+
+.coming{
+
+    background:#D8892A;
+
+    color:#ffffff;
+
+}
+
+/*====================================
+RESPONSIVE
+====================================*/
+
+@media(max-width:992px){
+
+.products-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+}
+
+@media(max-width:768px){
+
+.products-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.product-section h2{
+
+font-size:38px;
+
+}
+
+.section-intro{
+
+font-size:18px;
+
+}
+.brand-content h1{
+font-size:42px;
+line-height:1.2;
+}
+
+.brand-content p{
+font-size:18px;
+}
+
+.brand-logo{
+width:140px;
+}
+
+}
+
+/*====================================
+PACKAGING
+====================================*/
+
+.packaging-section{
+
+padding:100px 0;
+
+background:#f7f7f7;
+
+}
+
+.packaging-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:40px;
+
+margin-top:60px;
+
+}
+
+.packaging-card{
+
+background:#fff;
+
+padding:45px;
+
+border-radius:20px;
+
+box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+min-height:260px;
+
+text-align:center;
+
+transition:.35s;
+
+}
+.packaging-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.package-icon{
+
+font-size:60px;
+
+margin-bottom:25px;
+
+}
+
+.packaging-card h3{
+
+font-size:30px;
+
+color:#23461d;
+
+margin-bottom:10px;
+
+font-family:"Playfair Display",serif;
+
+}
+
+.packaging-card h4{
+
+font-size:22px;
+
+color:#D8892A;
+
+margin-bottom:20px;
+
+}
+
+.packaging-card p{
+
+font-size:18px;
+
+line-height:1.8;
+
+color:#666;
+
+}
+
+@media(max-width:768px){
+
+.packaging-grid{
+
+grid-template-columns:1fr;
+
+}
+}
+/*====================================
+INDUSTRIES
+====================================*/
+
+.industries-section{
+
+padding:100px 0;
+
+background:#ffffff;
+
+}
+
+.industries-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+margin-top:50px;
+
+}
+
+.industry-card{
+
+background:#fff;
+
+padding:35px;
+
+border-radius:18px;
+
+box-shadow:0 8px 25px rgba(0,0,0,.06);
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:flex-start;
+
+min-height:240px;
+
+transition:.35s;
+
+}
+
+.industry-card:hover{
+
+transform:translateY(-8px);
+
+background:#23461d;
+
+color:#ffffff;
+
+}
+
+.industry-card:hover h3,
+.industry-card:hover p{
+
+color:#ffffff;
+
+}
+
+.industry-card h3{
+
+font-size:24px;
+
+margin-bottom:15px;
+
+color:#23461d;
+
+}
+
+.industry-card p{
+
+line-height:1.8;
+
+color:#666;
+
+}
+
+@media(max-width:992px){
+
+.industries-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.industries-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.brand-hero .container{
+position:relative;
+z-index:2;
+}
+
+}
+
+
+.packaging-card,
+.industry-card{
+
+background:#ffffff;
+
+border-radius:24px;
+
+padding:45px;
+
+border:1px solid #ececec;
+
+box-shadow:
+
+0 8px 20px rgba(0,0,0,.05),
+
+0 18px 50px rgba(0,0,0,.06);
+
+transition:.35s;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.packaging-card:after,
+.industry-card:after{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+right:0;
+
+width:90px;
+
+height:90px;
+
+background:#D8892A;
+
+opacity:.06;
+
+border-radius:0 0 0 100%;
+
+}
+

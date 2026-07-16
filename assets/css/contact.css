@@ -1,0 +1,379 @@
+/* =========================================
+CONTACT HERO
+========================================= */
+
+.hero-contact{
+    position:relative;
+    height:100vh;
+    min-height:850px;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+    background:#08131d;
+}
+
+.hero-contact .hero-image{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center center;
+    z-index:1;
+}
+
+.hero-contact .hero-overlay{
+    position:absolute;
+    inset:0;
+    background:
+    linear-gradient(
+        90deg,
+        rgba(6,15,25,.82) 0%,
+        rgba(6,15,25,.70) 28%,
+        rgba(6,15,25,.40) 55%,
+        rgba(6,15,25,.12) 100%
+    );
+    z-index:2;
+}
+
+.hero-contact .hero-inner{
+    position:relative;
+    z-index:5;
+    width:100%;
+    display:flex;
+    align-items:center;
+}
+
+.hero-contact .hero-content{
+    width:620px;
+    max-width:620px;
+    padding-top:40px;
+}
+
+.hero-contact .hero-subtitle{
+    display:block;
+    color:#f47c20;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    font-weight:700;
+    margin-bottom:18px;
+    font-size:16px;
+}
+
+.hero-contact h1{
+    font-family:"Playfair Display",serif;
+    font-size:72px;
+    line-height:1.08;
+    color:#fff;
+    margin:0 0 28px;
+}
+
+.hero-contact h1 span{
+    color:#f47c20;
+}
+
+.hero-contact p{
+    color:#f4f4f4;
+    font-size:22px;
+    line-height:1.75;
+    margin-bottom:40px;
+    max-width:610px;
+}
+
+.hero-contact .hero-buttons{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+/* Responsive */
+
+@media (max-width:992px){
+
+.hero-contact{
+    min-height:760px;
+}
+
+.hero-contact .hero-content{
+    width:100%;
+    max-width:100%;
+}
+
+.hero-contact h1{
+    font-size:54px;
+}
+
+.hero-contact p{
+    font-size:18px;
+}
+
+}
+
+@media (max-width:768px){
+
+.hero-contact{
+    min-height:680px;
+    text-align:center;
+}
+
+.hero-contact .hero-content{
+    margin:auto;
+}
+
+.hero-contact .hero-buttons{
+    justify-content:center;
+}
+
+.hero-contact h1{
+    font-size:42px;
+}
+
+.hero-contact p{
+    font-size:17px;
+}
+
+}
+
+/* ===========================
+SECTIONS
+=========================== */
+
+.contact-info,
+.contact-form-section,
+.business-contact,
+.brands-contact,
+.contact-cta{
+    padding:100px 0;
+}
+
+.section-tag{
+    display:inline-block;
+    background:#d39b19;
+    color:#fff;
+    padding:10px 28px;
+    border-radius:40px;
+    font-weight:700;
+    letter-spacing:1px;
+    margin-bottom:20px;
+}
+
+.contact-form-section h2,
+.business-contact h2,
+.brands-contact h2{
+    font-family:"Playfair Display",serif;
+    font-size:52px;
+    color:#0d4b2f;
+    margin-bottom:20px;
+}
+
+/* ===========================
+CONTACT CARDS
+=========================== */
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:35px;
+}
+
+.info-card{
+    background:#fff;
+    padding:45px;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    text-align:center;
+}
+
+.info-card h3{
+    font-family:"Playfair Display",serif;
+    color:#0d4b2f;
+    margin-bottom:18px;
+    font-size:30px;
+}
+
+.info-card p{
+    color:#555;
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* ===========================
+FORM
+=========================== */
+
+.contact-form{
+    margin-top:50px;
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+    margin-bottom:25px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:18px 22px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:17px;
+    font-family:Inter,sans-serif;
+    transition:.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color:#0d4b2f;
+    outline:none;
+}
+
+.contact-form textarea{
+    margin:20px 0 35px;
+    resize:vertical;
+}
+
+/* ===========================
+BUSINESS GRID
+=========================== */
+
+.business-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:35px;
+    margin-top:50px;
+}
+
+.business-card{
+    background:#fff;
+    padding:45px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.business-card h3{
+    color:#0d4b2f;
+    font-family:"Playfair Display",serif;
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.business-card p{
+    color:#555;
+    line-height:2;
+    font-size:17px;
+}
+
+/* ===========================
+BRANDS
+=========================== */
+
+.brand-grid{
+    margin-top:45px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.brand-grid div{
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+    font-family:"Playfair Display",serif;
+    font-size:28px;
+    color:#0d4b2f;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+/* ===========================
+CTA
+=========================== */
+
+.contact-cta{
+    background:linear-gradient(135deg,#0d4b2f,#1b6a43);
+    text-align:center;
+    color:#fff;
+}
+
+.contact-cta h2{
+    font-family:"Playfair Display",serif;
+    font-size:56px;
+    margin-bottom:25px;
+    color:#fff;
+}
+
+.contact-cta p{
+    font-size:22px;
+    color:#f4f4f4;
+    margin-bottom:40px;
+}
+
+/* ===========================
+BUTTONS
+=========================== */
+
+.btn-primary{
+    display:inline-block;
+    background:#d39b19;
+    color:#fff;
+    padding:16px 36px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn-primary:hover{
+    background:#b6810d;
+    transform:translateY(-3px);
+}
+
+.btn-secondary{
+    display:inline-block;
+    border:2px solid #fff;
+    color:#fff;
+    padding:16px 36px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn-secondary:hover{
+    background:#fff;
+    color:#0d4b2f;
+}
+
+/* ===========================
+RESPONSIVE
+=========================== */
+
+@media(max-width:991px){
+
+.contact-grid,
+.business-grid,
+.brand-grid,
+.form-grid{
+    grid-template-columns:1fr;
+}
+
+.hero-content h1{
+    font-size:46px;
+}
+
+.contact-form-section h2,
+.business-contact h2,
+.brands-contact h2,
+.contact-cta h2{
+    font-size:38px;
+}
+
+.hero-content p{
+    font-size:18px;
+}
+
+}
