@@ -1,0 +1,637 @@
+/* =========================================================
+   MID HOLDINGS & INVESTMENTS
+   PAY NOW PAGE
+========================================================= */
+
+:root {
+    --pay-orange: #F58220;
+    --pay-green: #0E5A36;
+    --pay-dark-green: #123226;
+    --pay-navy: #0d223d;
+    --pay-light: #f6f7f4;
+    --pay-border: #e4e7e3;
+    --pay-text: #27332d;
+    --pay-muted: #657069;
+    --pay-white: #ffffff;
+}
+
+
+/* =========================================================
+   GENERAL
+========================================================= */
+
+.pay-container {
+    width: min(1300px, calc(100% - 80px));
+    margin: 0 auto;
+}
+
+.pay-section {
+    padding: 95px 0;
+    background: #ffffff;
+}
+
+.pay-section-light {
+    background: var(--pay-light);
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.pay-hero {
+    padding: 105px 0 95px;
+    background:
+        linear-gradient(
+            120deg,
+            #0b2f20,
+            #123226 55%,
+            #0d223d
+        );
+    color: #ffffff;
+}
+
+.pay-hero-inner {
+    display: grid;
+    grid-template-columns: 1.45fr 0.75fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.pay-eyebrow {
+    display: inline-block;
+    color: var(--pay-orange);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.pay-hero h1 {
+    margin: 14px 0 20px;
+    font-size: clamp(48px, 6vw, 78px);
+    line-height: 1.03;
+    font-weight: 700;
+}
+
+.pay-hero h1 span {
+    color: var(--pay-orange);
+}
+
+.pay-hero-content > p {
+    max-width: 760px;
+    color: #e2e9e5;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.pay-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+.pay-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 0.25s ease;
+}
+
+.pay-btn-primary {
+    background: var(--pay-orange);
+    color: #ffffff;
+}
+
+.pay-btn-primary:hover {
+    background: #df7015;
+    transform: translateY(-2px);
+}
+
+.pay-btn-outline {
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    color: #ffffff;
+}
+
+.pay-btn-outline:hover {
+    background: #ffffff;
+    color: var(--pay-dark-green);
+}
+
+.pay-btn-white {
+    background: #ffffff;
+    color: var(--pay-green);
+}
+
+.pay-btn-white:hover {
+    background: #f2f2f2;
+    transform: translateY(-2px);
+}
+
+.pay-btn-dark {
+    background: var(--pay-dark-green);
+    color: #ffffff;
+}
+
+.pay-btn-dark:hover {
+    background: #091d15;
+}
+
+
+/* =========================================================
+   HERO CARD
+========================================================= */
+
+.pay-hero-card {
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.pay-icon {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 25px;
+
+    background: var(--pay-orange);
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.pay-hero-card h3 {
+    margin: 0 0 12px;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.pay-hero-card p {
+    margin: 0;
+    color: #dce5e0;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   SECTION HEADINGS
+========================================================= */
+
+.pay-section-tag {
+    display: inline-block;
+    color: var(--pay-orange);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.pay-section h2 {
+    max-width: 900px;
+    margin: 10px 0 20px;
+    color: var(--pay-dark-green);
+    font-size: clamp(31px, 4vw, 48px);
+    line-height: 1.15;
+}
+
+.pay-lead {
+    max-width: 850px;
+    margin: 0 0 45px;
+    color: #5b665f;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   PAYMENT CARDS
+========================================================= */
+
+.pay-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.pay-card {
+    min-height: 210px;
+    padding: 30px;
+
+    border: 1px solid var(--pay-border);
+    background: #ffffff;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.pay-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 35px rgba(14, 90, 54, 0.09);
+}
+
+.pay-number {
+    color: var(--pay-orange);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.pay-card h3 {
+    margin: 16px 0 12px;
+    color: var(--pay-dark-green);
+    font-size: 22px;
+}
+
+.pay-card p {
+    margin: 0;
+    color: var(--pay-text);
+    line-height: 1.7;
+}
+
+.pay-card-highlight {
+    background: #fffaf5;
+    border-color: rgba(245, 130, 32, 0.45);
+}
+
+.pay-card-highlight a {
+    display: inline-block;
+    margin-top: 18px;
+    color: var(--pay-green);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.pay-card-highlight a:hover {
+    color: var(--pay-orange);
+}
+
+
+/* =========================================================
+   PAYMENT METHODS
+========================================================= */
+
+.method-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.method-card {
+    min-height: 235px;
+    padding: 30px;
+
+    border: 1px solid var(--pay-border);
+    background: #ffffff;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.method-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 35px rgba(14, 90, 54, 0.09);
+}
+
+.method-label {
+    display: inline-flex;
+    padding: 10px 13px;
+
+    background: var(--pay-green);
+    color: #ffffff;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.method-card h3 {
+    margin: 20px 0 12px;
+    color: var(--pay-dark-green);
+    font-size: 22px;
+}
+
+.method-card p {
+    color: var(--pay-text);
+    line-height: 1.7;
+}
+
+.method-status {
+    display: block;
+    margin-top: 20px;
+
+    color: var(--pay-orange);
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   IMPORTANT NOTICE
+========================================================= */
+
+.payment-notice {
+    margin-top: 30px;
+    padding: 20px 24px;
+
+    border-left: 4px solid var(--pay-orange);
+
+    background: #ffffff;
+
+    color: #4f5a53;
+    line-height: 1.7;
+}
+
+.payment-notice strong {
+    color: var(--pay-dark-green);
+}
+
+
+/* =========================================================
+   PAYMENT REFERENCE
+========================================================= */
+
+.payment-reference-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 65px;
+    align-items: center;
+}
+
+.reference-list {
+    display: grid;
+    gap: 14px;
+}
+
+.reference-item {
+    padding: 16px 0 16px 20px;
+    border-left: 3px solid var(--pay-orange);
+}
+
+.reference-item strong,
+.reference-item span {
+    display: block;
+}
+
+.reference-item strong {
+    color: var(--pay-dark-green);
+}
+
+.reference-item span {
+    margin-top: 4px;
+    color: var(--pay-muted);
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   REFERENCE CARD
+========================================================= */
+
+.reference-card {
+    padding: 42px;
+    background: var(--pay-green);
+    color: #ffffff;
+}
+
+.reference-card-label {
+    display: block;
+    margin-bottom: 14px;
+
+    color: #ffbd82;
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.reference-card h3 {
+    margin: 0 0 15px;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.reference-card p {
+    margin-bottom: 28px;
+    color: #ffffff;
+    line-height: 1.8;
+}
+
+.reference-card .pay-btn {
+    width: 100%;
+}
+
+.whatsapp-link {
+    display: block;
+    margin-top: 20px;
+
+    color: #ffbd82;
+
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.whatsapp-link:hover {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   PAYMENT PROCESS
+========================================================= */
+
+.pay-process h2 {
+    margin-bottom: 40px;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.step-card {
+    padding: 28px;
+
+    border: 1px solid var(--pay-border);
+    background: #ffffff;
+}
+
+.step-number {
+    color: var(--pay-orange);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.step-card h3 {
+    margin: 15px 0 10px;
+    color: var(--pay-dark-green);
+    font-size: 21px;
+}
+
+.step-card p {
+    margin: 0;
+    color: var(--pay-text);
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
+.pay-cta {
+    padding: 78px 0;
+    background: var(--pay-orange);
+}
+
+.pay-cta-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+}
+
+.pay-cta .pay-section-tag {
+    color: #ffffff;
+}
+
+.pay-cta h2 {
+    max-width: 850px;
+    margin: 10px 0 18px;
+
+    color: #ffffff;
+
+    font-size: clamp(31px, 4vw, 48px);
+    line-height: 1.15;
+}
+
+.pay-cta p {
+    max-width: 760px;
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.pay-cta .pay-buttons {
+    margin-top: 0;
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .pay-container {
+        width: min(100% - 50px, 1300px);
+    }
+
+    .pay-hero-inner {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .payment-reference-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .pay-grid,
+    .method-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pay-cta-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pay-cta .pay-buttons {
+        margin-top: 10px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .pay-container {
+        width: calc(100% - 36px);
+    }
+
+    .pay-hero {
+        padding: 75px 0 65px;
+    }
+
+    .pay-section {
+        padding: 65px 0;
+    }
+
+    .pay-hero h1 {
+        font-size: 50px;
+    }
+
+    .pay-hero-content > p {
+        font-size: 16px;
+    }
+
+    .pay-grid,
+    .method-grid,
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pay-hero-card {
+        padding: 28px;
+    }
+
+    .reference-card {
+        padding: 30px;
+    }
+
+    .pay-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .pay-btn {
+        width: 100%;
+    }
+
+    .pay-cta .pay-buttons {
+        width: 100%;
+    }
+}

@@ -36,24 +36,22 @@
     ============================ -->
 
     <nav class="navbar">
-
-        <div class="logo">
-            <a href="index.html">
-                <img src="assets/images/logo.png" alt="MID Holdings & Investments">
-            </a>
-        </div>
-
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="businesses.html">Businesses</a></li>
-            <li><a href="consultancy.html">Consultancy</a></li>
-            <li><a href="brands/index.html">Brands</a></li>
-            <li><a href="marketplace.html">Marketplace</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-
-    </nav>
+    <div class="logo">
+        <a href="index.html"><img src="assets/images/logo.png" alt="MID Holdings & Investments"></a>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="businesses.html">Businesses</a></li>
+        <li><a href="consultancy.html">Consultancy</a></li>
+        <li><a href="brands/index.html">Brands</a></li>
+        <li><a href="marketplace.html">Marketplace</a></li>
+        <li><a href="properties-projects.html">Properties & Projects</a></li>
+        <li><a href="pay-now.html">Pay Now</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
 
    <section class="hero">
 
@@ -184,7 +182,7 @@
         <div class="division-card">
             <h3>Agriculture & Food Industries</h3>
             <p>
-                Agriculture, food processing, dairy, cold pressed oils,
+                Agriculture, food processing, dairy, cold-pressed oils,
                 manufacturing, consumer brands and export development.
             </p>
         </div>
@@ -209,7 +207,7 @@
             <h3>Asset Utilization & Property Advisory</h3>
             <p>
                 Helping clients maximize the value of assets through
-                leasing strategies, commercial utilization and income optimization.
+                leasing strategies, commercial utilisation and income optimization.
             </p>
 
 </div>
@@ -217,7 +215,7 @@
     <h3>Business Incubation & Venture Development</h3>
     <p>
         Supporting entrepreneurs and emerging businesses through strategic
-        planning, business development, operational guidance and sustainable
+        planning, business development, operational guidance, and sustainable
         growth.
     </p>
 </div>
@@ -240,7 +238,7 @@
         <div class="why-card">
             <h3>Strategic Thinking</h3>
             <p>
-                Every project begins with careful planning, analysis and a
+                Every project begins with careful planning, analysis, and a
                 long-term vision for sustainable success.
             </p>
         </div>
@@ -422,106 +420,107 @@
 
 </section>
 
-<section>
 <footer class="footer">
-
     <div class="footer-container">
-
-        <!-- Company -->
         <div class="footer-column">
-
             <img src="assets/images/logo.png" alt="MID Holdings & Investments" class="footer-logo">
-
-            <p>
-                MID Holdings & Investments is a diversified business development,
-                consultancy and investment company committed to building
-                sustainable businesses, creating opportunities and delivering
-                long-term value across multiple industries.
-            </p>
-
+            <p>MID Holdings & Investments is a diversified business development, consultancy and investment company committed to building sustainable businesses, creating opportunities and delivering long-term value across multiple industries.</p>
         </div>
-
-        <!-- Quick Links -->
         <div class="footer-column">
-
             <h3>Quick Links</h3>
-
             <ul>
-
                 <li><a href="index.html">Home</a></li>
-
                 <li><a href="about.html">About Us</a></li>
-
                 <li><a href="businesses.html">Businesses</a></li>
-
                 <li><a href="consultancy.html">Consultancy</a></li>
-
                 <li><a href="brands/index.html">Brands</a></li>
-
                 <li><a href="marketplace.html">Marketplace</a></li>
-
+                <li><a href="properties-projects.html">Properties & Projects</a></li>
+                <li><a href="pay-now.html">Pay Now</a></li>
+                <li><a href="careers.html">Careers</a></li>
                 <li><a href="contact.html">Contact</a></li>
-
             </ul>
-
         </div>
-
-        <!-- Expertise -->
         <div class="footer-column">
-
             <h3>Business Expertise</h3>
-
             <ul>
-
                 <li>Strategic Advisory</li>
-
-                <li>Agriculture & Food Industries</li>
-
-                <li>Education & Human Development</li>
-
+                <li>Agriculture &amp; Food Industries</li>
+                <li>Education &amp; Human Development</li>
                 <li>International Business</li>
-
                 <li>Asset Utilization</li>
-
                 <li>Business Consultancy</li>
-
             </ul>
-
         </div>
-
-        <!-- Contact -->
         <div class="footer-column">
-
             <h3>Contact</h3>
-
             <p>Karachi, Pakistan</p>
-
-            <p>info@themidholdings.com</p>
-
+            <p>info@midholdings.com</p>
             <p>+92 333 821 1065</p>
-
-
         </div>
-
     </div>
-
     <div class="footer-bottom">
-
-        <p>
-            © 2026 MID Holdings & Investments. All Rights Reserved.
-        </p>
-
+        <p>© 2026 MID Holdings &amp; Investments. All Rights Reserved.</p>
         <div class="footer-links">
-
             <a href="#">Privacy Policy</a>
-
-            <a href="#">Terms & Conditions</a>
-
+            <a href="#">Terms &amp; Conditions</a>
         </div>
+    </div>
+
+<!-- =========================================
+     MID NEIGHBOURHOOD FLYER POPUP
+========================================= -->
+
+<div id="midNeighbourhoodPopup" class="mid-flyer-overlay">
+
+    <div class="mid-flyer-box">
+
+        <button
+            type="button"
+            class="mid-flyer-close"
+            id="midFlyerClose"
+            aria-label="Close flyer">
+            &times;
+        </button>
+
+        <a href="properties-projects.html">
+            <img
+                src="assets/images/mid-neighbourhood-flyer.jpg"
+                alt="MID Neighborhood"
+                class="mid-flyer-image">
+        </a>
 
     </div>
 
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+    const popup = document.getElementById("midNeighbourhoodPopup");
+    const closeButton = document.getElementById("midFlyerClose");
+
+    if(!popup || !closeButton){
+        return;
+    }
+
+    closeButton.addEventListener("click", function(){
+        popup.classList.add("hidden");
+    });
+
+    popup.addEventListener("click", function(event){
+
+        if(event.target === popup){
+            popup.classList.add("hidden");
+        }
+
+    });
+
+});
+</script>
+
+
+</body>
 </footer>
-</section>
 
 </html>

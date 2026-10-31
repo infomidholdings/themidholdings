@@ -1,0 +1,445 @@
+/* =========================================================
+   MID HOLDINGS — PROPERTIES & PROJECTS
+   Page-specific stylesheet.
+   Uses the existing main.css for global typography/buttons.
+========================================================= */
+
+:root {
+    --pp-orange: #F58220;
+    --pp-green: #0E5A36;
+    --pp-dark: #123226;
+    --pp-light: #f6f7f4;
+    --pp-border: #e4e7e3;
+    --pp-text: #27332d;
+}
+
+.pp-hero {
+    position: relative;
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: #102b21;
+}
+
+.pp-hero-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pp-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(5, 42, 28, .92) 0%, rgba(5, 42, 28, .68) 38%, rgba(5, 42, 28, .12) 72%, rgba(5, 42, 28, .05) 100%);
+}
+
+.pp-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 720px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: #fff;
+}
+
+.pp-eyebrow,
+.pp-card-label {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--pp-orange);
+}
+
+.pp-hero h1 {
+    margin: 14px 0 18px;
+    font-size: clamp(42px, 5vw, 70px);
+    line-height: 1.04;
+    font-weight: 700;
+}
+
+.pp-hero h1 span {
+    color: var(--pp-orange);
+}
+
+.pp-hero p {
+    max-width: 650px;
+    font-size: 18px;
+    line-height: 1.75;
+    margin-bottom: 28px;
+}
+
+.pp-hero-buttons,
+.pp-cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.pp-hero-services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 28px;
+}
+
+.pp-hero-services span {
+    padding: 9px 13px;
+    border: 1px solid rgba(255,255,255,.28);
+    border-radius: 30px;
+    background: rgba(255,255,255,.08);
+    font-size: 12px;
+}
+
+.pp-intro,
+.pp-rental,
+.pp-services {
+    padding: 95px 0;
+}
+
+.pp-intro { background: #fff; }
+.pp-rental { background: var(--pp-light); }
+.pp-services { background: #fff; }
+
+.pp-intro h2,
+.pp-rental h2,
+.pp-services h2,
+.pp-neighborhood h2,
+.pp-future h2,
+.pp-cta h2 {
+    max-width: 900px;
+    margin: 10px 0 20px;
+    color: var(--pp-dark);
+    font-size: clamp(30px, 4vw, 48px);
+    line-height: 1.15;
+}
+
+.pp-lead {
+    max-width: 850px;
+    margin: 0 0 45px;
+    color: #5b665f;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.pp-feature-grid,
+.pp-rental-grid,
+.pp-services-grid {
+    display: grid;
+    gap: 22px;
+}
+
+.pp-feature-grid { grid-template-columns: repeat(3, 1fr); }
+.pp-rental-grid { grid-template-columns: 1.4fr 1fr 1fr; }
+.pp-services-grid { grid-template-columns: repeat(4, 1fr); }
+
+.pp-feature-card,
+.pp-rental-card,
+.pp-service-card {
+    border: 1px solid var(--pp-border);
+    background: #fff;
+    padding: 30px;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.pp-feature-card:hover,
+.pp-rental-card:hover,
+.pp-service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 35px rgba(14, 90, 54, .09);
+}
+
+.pp-feature-number,
+.pp-service-icon {
+    color: var(--pp-orange);
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 22px;
+}
+
+.pp-feature-card h3,
+.pp-rental-card h3,
+.pp-service-card h3 {
+    margin: 0 0 12px;
+    color: var(--pp-dark);
+    font-size: 22px;
+}
+
+.pp-feature-card p,
+.pp-rental-card p,
+.pp-service-card p {
+    color: var(--pp-text);
+    line-height: 1.7;
+}
+
+.pp-feature-card a,
+.pp-text-link {
+    display: inline-block;
+    margin-top: 12px;
+    color: var(--pp-green);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.pp-neighbourhood {
+    padding: 100px 0;
+    background: #f1f4f0;
+}
+
+.pp-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 65px;
+    align-items: center;
+}
+
+.pp-split-image {
+    min-height: 500px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.pp-split-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    object-fit: cover;
+}
+
+.pp-highlight {
+    color: var(--pp-green) !important;
+    font-size: 20px !important;
+    font-weight: 600;
+}
+
+.pp-check-list {
+    margin: 28px 0 32px;
+    display: grid;
+    gap: 14px;
+}
+
+.pp-check-list div {
+    padding-left: 20px;
+    border-left: 3px solid var(--pp-orange);
+}
+
+.pp-check-list strong,
+.pp-check-list span {
+    display: block;
+}
+
+.pp-check-list strong { color: var(--pp-dark); }
+.pp-check-list span { margin-top: 3px; color: #657069; font-size: 14px; }
+
+.pp-rental-card-large {
+    background: var(--pp-green);
+    color: #fff;
+}
+
+.pp-rental-card-large h3,
+.pp-rental-card-large p,
+.pp-rental-card-large li {
+    color: #fff;
+}
+
+.pp-rental-card-large .pp-card-label,
+.pp-rental-card-large .pp-text-link {
+    color: #ffb26d;
+}
+
+.pp-rental-card ul {
+    padding-left: 20px;
+    line-height: 2;
+}
+
+.pp-future {
+    padding: 90px 0;
+    background: #0b2f20;
+    color: #fff;
+}
+
+.pp-future h2,
+.pp-future p {
+    color: #fff;
+}
+
+.pp-future-inner {
+    display: grid;
+    grid-template-columns: 1.5fr .8fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.pp-coming-soon {
+    padding: 35px;
+    border: 1px solid rgba(255,255,255,.2);
+    background: rgba(255,255,255,.06);
+}
+
+.pp-coming-soon span {
+    color: var(--pp-orange);
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.pp-coming-soon strong {
+    display: block;
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+.pp-coming-soon p { margin: 0; color: #d8e1dc; }
+
+.pp-cta {
+    padding: 75px 0;
+    background: var(--pp-orange);
+}
+
+.pp-cta h2 { margin-bottom: 12px; color: #fff; }
+.pp-cta p { max-width: 720px; color: #fff; line-height: 1.7; }
+.pp-cta .section-tag { color: #fff; }
+.pp-cta-inner { display: flex; justify-content: space-between; align-items: center; gap: 40px; }
+
+@media (max-width: 1000px) {
+    .pp-feature-grid,
+    .pp-services-grid { grid-template-columns: repeat(2, 1fr); }
+    .pp-rental-grid { grid-template-columns: 1fr 1fr; }
+    .pp-rental-card-large { grid-column: 1 / -1; }
+    .pp-split,
+    .pp-future-inner { grid-template-columns: 1fr; }
+    .pp-cta-inner { flex-direction: column; align-items: flex-start; }
+}
+
+@media (max-width: 700px) {
+    .pp-hero { min-height: 700px; }
+    .pp-hero-content { padding-top: 60px; padding-bottom: 60px; }
+    .pp-hero p { font-size: 16px; }
+    .pp-feature-grid,
+    .pp-rental-grid,
+    .pp-services-grid { grid-template-columns: 1fr; }
+    .pp-split-image,
+    .pp-split-image img { min-height: 340px; }
+    .pp-intro,
+    .pp-rental,
+    .pp-services,
+    .pp-neighborhood { padding: 65px 0; }
+}
+/*=========================================
+ FOOTER
+=========================================*/
+
+.footer{
+
+    background:#0d223d;
+
+    color:#d9d9d9;
+
+    padding:80px 40px 25px;
+}
+
+.footer-container{
+
+    max-width:1300px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr 1fr;
+
+    gap:50px;
+}
+
+.footer-logo{
+
+    width:180px;
+
+    margin-bottom:25px;
+}
+
+.footer-column h3{
+
+    color:#ffffff;
+
+    margin-bottom:20px;
+
+    font-size:24px;
+}
+
+.footer-column p{
+
+    color:#cfcfcf;
+
+    line-height:1.8;
+
+    margin-bottom:12px;
+}
+
+.footer-column ul{
+
+    list-style:none;
+}
+
+.footer-column ul li{
+
+    margin-bottom:14px;
+}
+
+.footer-column ul li a{
+
+    color:#d6d6d6;
+
+    transition:.3s;
+}
+
+.footer-column ul li a:hover{
+
+    color:#f58220;
+}
+
+.footer-bottom{
+
+    border-top:1px solid rgba(255,255,255,.12);
+
+    margin-top:60px;
+
+    padding-top:25px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+}
+
+.footer-bottom p{
+
+    color:#cfcfcf;
+}
+
+.footer-links{
+
+    display:flex;
+
+    gap:25px;
+}
+
+.footer-links a{
+
+    color:#d6d6d6;
+
+    transition:.3s;
+}
+
+.footer-links a:hover{
+
+    color:#f58220;
+}
+

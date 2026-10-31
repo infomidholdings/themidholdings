@@ -1,0 +1,16 @@
+about.html | nav=1 footer=1 active=1
+brands/future-ventures.html | nav=1 footer=1 active=1
+brands/index.html | nav=1 footer=1 active=1
+brands/mai-h2o.html | nav=1 footer=1 active=1
+brands/mid-hiat.html | nav=1 footer=1 active=1
+brands/oleastra.html | nav=1 footer=1 active=1
+brands/purevita.html | nav=1 footer=1 active=1
+brands/taleem-fountain.html | nav=1 footer=1 active=1
+businesses.html | nav=1 footer=1 active=1
+careers.html | nav=0 footer=1 active=1
+consultancy.html | nav=1 footer=1 active=1
+contact.html | nav=1 footer=1 active=1
+index.html | nav=1 footer=1 active=1
+marketplace.html | nav=1 footer=1 active=1
+pay-now.html | nav=1 footer=1 active=1
+properties-projects.html | nav=1 footer=1 active=1
